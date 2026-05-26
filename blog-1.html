@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>마포 럭셔리 단체 가라오케 예약 가이드 | 남성 에스테틱 힐링 타임</title>
+    <meta name="description" content="마포 럭셔리 단체 가라오케 예약 가이드, 남성 에스테틱 힐링 타임과 가라오케/셔츠룸 예약 팁">
+    <meta name="keywords" content="마포 럭셔리 단체 가라오케, 남성 에스테틱 힐링 타임, 가라오케/셔츠룸 예약 팁, 마포 에스테틱, 단체룸 추천">
+    <link rel="canonical" href="https://mens-esthe.space/mapo-luxury-guide">
+    <meta property="og:title" content="마포 럭셔리 단체 가라오케 예약 가이드">
+    <meta property="og:description" content="마포 럭셔리 단체 가라오케 예약 가이드, 남성 에스테틱 힐링 타임과 가라오케/셔츠룸 예약 팁">
+    <meta property="og:url" content="https://mens-esthe.space">
+    <meta property="og:type" content="article">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #1d1d1f;
+            --text-sub: #86868b;
+            --accent: #000000;
+            --border: #d2d2d7;
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header & Nav */
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .nav-links a:hover { opacity: 0.6; }
+        .nav-toggle { display: none; }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-sub);
+            max-width: 600px;
+        }
+
+        /* Content Sections */
+        .content-block {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .content-block:last-child { border-bottom: none; }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .text-block p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #333;
+        }
+        .highlight {
+            background: #f5f5f7;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        /* Reviews / Cards */
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .review {
+            border: 1px solid var(--border);
+            padding: 32px;
+            border-radius: 0; /* Sharp edges per Swiss design */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .review:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .review h2 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        .review p {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            line-height: 1.5;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-top: 1px solid var(--border);
+            padding: 24px 0;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 60px 0;
+            background: #f5f5f7;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .nav-toggle:checked + .nav { display: block; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 20px;
+                border-bottom: 1px solid var(--border);
+            }
+            .nav-toggle-label {
+                display: block;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 769px) {
+            .nav-toggle-label { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav-brand">MENS ESTHE SPACE</a>
+                <label for="nav-toggle" class="nav-toggle-label">☰</label>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Journal</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+
+<!-- SEO Visual 1: 마포 럭셔리 단체 가라오케 예약 가이드 Editorial Apple Hero -->
+<div class="seo-visual-hero" role="img" aria-label="신뢰할 수 있는 서비스 —  마포 럭셔리 단체 가라오케 예약 가이드" 
+     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
+  <div style="max-width:800px;margin:0 auto">
+    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
+    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">마포 럭셔리 단체 가라오케 예약 가이드</div>
+    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">신뢰할 수 있는 서비스에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
+  </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"마포 럭셔리 단체 가라오케 예약 가이드","description":"신뢰할 수 있는 서비스","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+            <div class="container">
+                <h1>마포 럭셔리 단체 가라오케<br>완벽 공략 가이드</h1>
+                <p>단순한 유흥이 아니다. 당신의 격을 증명하는 남성 에스테틱 힐링 타임. 실패 없는 예약을 위한 단 하나의 가이드.</p>
+            </div>
+        </section>
+
+<!-- SEO Visual 2: VIP 단체 모임 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="마포 럭셔리 단체 가라오케 예약 가이드 VIP 단체 모임 — 신뢰할 수 있는 서비스" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">SEO 대책</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마포 럭셔리 단체 가라오케 예약 가이드</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">집객 지원</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마포 럭셔리 단체 가라오케 예약 가이드</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">분석</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">마포 럭셔리 단체 가라오케 예약 가이드</span>
+  </div>
+</div>
+
+        <!-- Introduction -->
+        <section class="content-block">
+            <div class="container">
+                <h2 class="section-title">01. 기준을 다시 세우다</h2>
+                <div class="grid-2">
+                    <div class="text-block">
+                        <p>마포의 밤은 타락이 아니라 해방이다ᅡ. 하지만 어중간한 선택은 당신의 시간과 돈을 좀먹는다. 우리는 '럭셔리'라는 단어가 남용되는 시대에, 진정한 가치를 가려내는 법을 제시한다.</p>
+                        <p>마포 럭셔리 단체 가라오케는 단순히 소리를 지르는 곳이 아니다. 비즈니스의 담판을 뒤집거나, 우정을 각인하거나, 지친 영혼을 쉬게 하는 공간이어야 한다. 뻔한 추ᅮ천은 거절한다. 확실한 스펙과 디테일로 승부하는 곳들로만 엄선했다.</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Editor's Note</h3>
+                        <p style="margin-top:10px; color:#555;">"비싼 방이 좋은 방이 아니다. 당신의 니즈 (니가 워ᄛ하는 것) 를 정확히 파악하는 사장과 직원이 있는 곳, 그것이 곧 마포에서의 럭셔리다."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features / Tips -->
+        <section class="content-block">
+            <div class="container">
+                <h2 class="section-title">02. 실패를 배제하는 3 가지 원칙</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <h2>#1. 사운드 시스템의 물성</h2>
+                        <p>가장 중요한 건 마이크의 반사음과 스피커의 져음이다. 비싼 비주얼도 소리가 답답하면 순식간에 촌스러운 무대가 된다. 마포 내에서도 오디오파일을 자처하는 곳들의 라인업을 확인하라.</p>
+                    </div>
+                    <div class="review">
+                        <h2>#2. 서비스의ᅴ 온도와 속도</h2>
+                        <p>요구하기 전에 채워지는 서비스, 그러나 과하지 않은 선에서 물러나는 센스. 단체석일수록 이 '눈치'가 분위기를 좌우한다. 직원의 교육 수준을 먼저 체크해야 한다.</p>
+                    </div>
+                    <div class="review">
+                        <h2>#3. 프라이빗한 동선</h2>
+                        <p>화려한 로비도 좋지만, 들어간 뒤 외부와 철저히 단절되는 고립감이 진정한 안식을 만든다. 엘리베이터 동선부터 실실 내부의 방음 설계까지 꼼꼼히 따져라.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Guide -->
+        <section class="content-block">
+            <div class="container">
+                <h2 class="section-title">03. 시나리오별 맞춤 추천</h2>
+                <div class="text-block">
+                    <p><strong>1. 비즈니스 만찬 후 2 차:</strong><br>
+                    소음이 적절히 통제되고, 대화가 가능한 수ᅮ준의 사운드 시스템을 갖ᆽ춘 곳. 과음하지 않더라도 분위기에 취할 수 있는 세련된 인테리어와 위스키/와인 라인업을 보ᄋ유한 마포의 몇 안 되는 곳들을 공략하라.</p>
+                    <br>
+                    <p><strong>2. 동창회 및 단합대회:</strong><br>
+                    공간이 넓고, 구석구석 비비지 않아도 되는 호방한 룸이 필수다. 노래 실력이 들쑥날쑥이어도 민망하지 않은 조명과 분위기 메이커 직원이 상주하는 곳이 좋다. '마포 럭셔리 단체 가라오케' 중에서도 단체석 비중이 큰 곳을 공략하라.</p>
+                    <br>
+                    <p><strong>3. 연인과의 프러포즈 또는 생일파티:</strong><br>
+                    단ᄎ체실이지만 프라이빗하고 고급스러운 데코가 가능한지, 케이크 반입 및 샴페인 오프닝 서비스의 디테일을 확인ᄒ해야 한더. 남성 에스테틱 힐링 타임의 백미는 바로 이 순간에 있다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-block">
+            <div class="container">
+                <h2 class="section-title">04. 자주 묻는 질문 (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <h3>Q. 마포에서 가라오케와 셔츠룸의 결정적 차이는?</h3>
+                    <p>A. 가라오케가 '노래와 건배'에 집중하는 능동적 유흥이라면, 셔츠룸은 '휴식과 케어'에 집중하ᄂ는 수동적 힐링 공간에다. 최근 마포 럭셔리 가라오케들은 두 기능을 결합한 하이브리드 시스템을 도입 중이다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q. 예약 없이 방문해도 되나요?</h3>
+                    <p>A. 웬만하면 추천하지 않는다. 특히 금, 토, 일요일 밤에는 '럭셔리'한 공간을 원한다ᅡ면 예약은 필수ᄃ다. 빈방이 있어도 질이 떨어지는 막방일 확률이 90% 이상이다.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q. 남성 에스테틱 힐링이란 무엇을 의미하나요?</h3>
+                    <p>A. 거칠고 투박했던 기존의 유흥 문화에서 벗어나, 남성의 눈높이에 마ᄒ춘 세련된 인테리어, 프리미엄 주류, 그리고 예절 바른 서비스를 통해 정신적 피로까지 해소하는 고차원적인 문화 향유을 뜻한다.</p>
+                </div>
+
+            </div>
+        
+<div class="seo-visual-divider" role="separator" aria-label="마포 럭셔리 단체 가라오케 예약 가이드 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mens Esthe Space. All rights reserved.</p>
+            <p style="margin-top: 8px;">Seoul, Mapo-gu | Designed for the Bold</p>
+        </div>
+    </footer>
+
+</body>
+</html>
